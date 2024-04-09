@@ -17,6 +17,10 @@ symbols and then read the DWARF symbols from it.
 #include <linux/inetdevice.h>
 #include <net/protocol.h>
 
+#ifdef MODULE_LICENSE
+MODULE_LICENSE("GPL");
+#endif
+
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(4,20,0)
 struct xa_node xa;
 #endif
